@@ -1,0 +1,86 @@
+.container {
+}
+
+.header {
+	font-size: 2em;
+	border-bottom: 1px solid silver;
+	margin-bottom: .5em;
+	margin-top: .5em;
+}
+
+html {
+	padding: 1em;
+}
+
+.job {
+	position: relative;
+	margin-bottom: 1em;
+}
+
+/* @group Generic */
+
+.project {
+	left: 1em;
+	position: relative;
+	font-style: italic;
+}
+
+.title {
+	direction: ltr;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+.location {
+	text-align: right;
+	position: relative;
+	bottom: 1.5em;
+	clear: both;
+	float: right;
+	font-weight: bold;
+}
+
+.time {
+	font-style: italic;
+	left: 1em;
+	position: relative;
+}
+
+.description {
+
+}
+
+.description li {
+	position: relative;
+	left: 1em;
+	list-style-type: circle;
+}
+
+.location {
+	
+}
+
+/* @end */
+
+/* @group Education */
+
+.edu .title {
+	direction: ltr;
+	text-transform: capitalize;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.2em;
+}
+
+.edu .location {
+	text-align: right;
+	position: relative;
+	bottom: 1.5em;
+	clear: both;
+	float: right;
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+
+/* @end */

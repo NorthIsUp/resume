@@ -1,0 +1,88 @@
+<pre>
+  <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"> 
+  <!--[if IE]>
+    <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+  <![endif]-->
+</pre>
+
+
+<dl>
+  <dt>@.small@</dt><dd>Makes the text of this element smaller.</dd>
+  <dt>@.large@</dt><dd>Makes the text of this element larger.</dd>
+  <dt>@.hide@</dt><dd>Hides an element.</dd>
+  <dt>@.quiet@</dt><dd>Tones down the font color for this element.</dd>
+  <dt>@.loud@</dt><dd>Makes this elements text black.</dd>
+  <dt>@.highlight@</dt><dd>Adds a yellow background to the text.</dd>
+  <dt>@.added@</dt><dd>Adds green background to the text.</dd>
+  <dt>@.removed@</dt><dd>Adds red background to the text.</dd>
+  <dt>@.first@</dt><dd>Removes any left sided margin/padding from the element.</dd>
+  <dt>@.last@</dt><dd>Removes any right sided margin/padding from the element.</dd>
+  <dt>@.top@</dt><dd>Removes any top margin/padding from the element.</dd>
+  <dt>@.bottom@</dt><dd>Removes any bottom margin/padding from the element.</dd>
+</dl>
+
+
+<dl>
+	<dt>@div.error@</dt><dd>Creates an error box (red).</dd>
+	<dt>@div.notice@</dt><dd>Creates a box for notices (yellow).</dd>
+	<dt>@div.success@</dt><dd>Creates a box for success messages (green).</dd>
+</dl>
+
+
+<pre>			
+  <div class="container">
+  	<div class="span-24">
+  		The header
+  	</div>
+
+  	<div class="span-4">
+  		The first column
+  	</div>
+  	<div class="span-16">
+  		The center column
+  	</div>
+  	<div class="span-4 last">
+  		The last column
+  	</div>
+	
+  	<div class="span-24">
+  		The footer
+  	</div>
+  </div>
+</pre>
+
+
+<dl>
+  <dt>@.append-x@</dt><dd>Appends x number of empty columns after a column.</dd>
+  <dt>@.prepend-x@</dt><dd>Preppends x number of empty columns before a column.</dd>
+  <dt>@.push-x@</dt><dd>Pushes a column x columns to the left. Can be used to swap columns.</dd>
+  <dt>@.pull-x@</dt><dd>Pulls a column x columns to the right. Can be used to swap columns.</dd>
+  <dt>@.border@</dt><dd>Applies a border to the right side of the column.</dd>
+  <dt>@.colborder@</dt><dd>Appends one empty column, with a border down the middle.</dd>
+  <dt>@.clear@</dt><dd>Makes a column drop below a row, regardless of space.</dd>
+	<dt>@.showgrid@</dt><dd>Add to container or column to see the grid and baseline.</dd>
+</dl>
+
+
+<pre>				
+	<div class="container">
+		<div class="span-12">
+			<div class="span-6">
+				Top left
+			</div>
+			<div class="span-6 last">
+				Top right
+			</div>
+			<div class="span-6">
+				Bottom left
+			</div>
+			<div class="span-6 last">
+				Bottom right
+			</div>
+		</div>
+		<div class="span-12 last">
+			Second half of page
+		</div>
+	</div>
+</pre>
