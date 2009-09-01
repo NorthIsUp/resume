@@ -1,4 +1,14 @@
 .container {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.1em;
+}
+
+p {
+
+}
+
+img.logo{
+	float: right;
 }
 
 .header {
@@ -23,12 +33,13 @@ html {
 	left: 1em;
 	position: relative;
 	font-style: italic;
+	/*font-size: 1.1em;*/
 }
 
 .title {
-	direction: ltr;
 	text-transform: capitalize;
 	font-weight: bold;
+	text-align: left;
 }
 
 .location {
@@ -44,6 +55,7 @@ html {
 	font-style: italic;
 	left: 1em;
 	position: relative;
+	/*font-size: 1.1em;*/
 }
 
 .description {
@@ -54,21 +66,18 @@ html {
 	position: relative;
 	left: 1em;
 	list-style-type: circle;
+	/*font-size: 1.1em;*/
 }
 
-.location {
-	
-}
 
 /* @end */
 
 /* @group Education */
 
 .edu .title {
-	direction: ltr;
+	width: 16.8em;
 	text-transform: capitalize;
 	font-weight: normal;
-	font-style: normal;
 	font-size: 1.2em;
 }
 
@@ -84,3 +93,25 @@ html {
 
 
 /* @end */
+
+h1.alphabet {
+	text-align: center;
+}
+
+h1.alphabet a{
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+h1.alphabet a:hover {
+	text-decoration: underline;	
+}
+
+img.top.pull-1.left {
+	margin: 0 .4em 0 0;
+}
+
+
+
+
+
