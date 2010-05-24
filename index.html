@@ -44,6 +44,28 @@
     });
   });
   </script>
+    <script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAnry1DtJjRozJfRjRcSUrMRTQvVGhFK6aFUeXGtbjTKoX9KOW0BRwO2qF3LYiMzhcWEI80l4pfh-OLg"></script>
+    <script type="text/javascript">
+ 
+    google.load("feeds", "1");
+ 
+    function initialize() {
+      var feed = new google.feeds.Feed("http://github.com/NorthIsUp.atom");
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.getElementById("feed");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            var div = document.createElement("div");
+            div.appendChild(document.createTextNode(entry.title));
+            container.appendChild(div);
+          }
+        }
+      });
+    }
+    google.setOnLoadCallback(initialize);
+ 
+    </script>
 </head>
 
 <body>
@@ -354,6 +376,8 @@
         <p class="quiet">Have my business card? hold up the back of your card to your camera for my hello world surprise. Don't have my card? print out <a href="resources/augmented.pdf">this</a> image.
           <h3>Twitter</h3>
           <div class="tweet"></div>
+          <h3>Code</h3>
+          <div id="feed" class="feed"></div>
         </div>
 
         <hr>
