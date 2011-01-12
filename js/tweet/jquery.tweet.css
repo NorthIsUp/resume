@@ -1,14 +1,23 @@
-/*.tweet {
+.tweet {
 	
 }
 
 .tweet .tweet_list {
 	-webkit-border-radius: .5em;
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background-color: #8ADEE2;
-}*/
+	/*margin: 0;*/
+	/*padding: 0;*/
+	/*background-color: #8ADEE2;*/
+}
+
+#feed div {
+	padding-left: .5em;
+	overflow: auto;
+	margin-top: .5em;
+	vertical-align: middle;
+	margin-bottom: 1em;
+	margin-left: 1em;
+}
 
 .tweet .tweet_list li {
 	overflow: auto;
