@@ -53,7 +53,7 @@
     var feed = new google.feeds.Feed("http://github.com/NorthIsUp.atom");
     feed.load(function(result) {
       if (!result.error) {
-        var container = document.getElementById("feed");
+        var container = document.getElementById("github");
         for (var i = 0; i < result.feed.entries.length; i++) {
           var entry = result.feed.entries[i];
           var div = document.createElement("div");
@@ -62,6 +62,20 @@
         }
       }
     });
+    
+    var feed = new google.feeds.Feed("http://northisup.com/feed/");
+    feed.load(function(result) {
+      if (!result.error) {
+        var container = document.getElementById("blog");
+        for (var i = 0; i < result.feed.entries.length; i++) {
+          var entry = result.feed.entries[i];
+          var div = document.createElement("div");
+          div.appendChild(document.createTextNode(entry.title));
+          container.appendChild(div);
+        }
+      }
+    });
+    
   }
   google.setOnLoadCallback(initialize);
 
@@ -385,7 +399,12 @@
         <div class="footprints">
           <h3>My Footprints</h3>
           <h4><a href="https://github.com/northisup">Git Hub</a></h4>
-          <div id="feed" class="feed"></div>
+          <div id="github" class="feed"></div>
+          <hr />
+
+          <h4><a href="https://northisup.com">My Blog</a></h4>
+          <div id="blog" class="feed"></div>
+          
           <hr />
           <h4>Twitter</h4>
           <div class="tweet"></div>
