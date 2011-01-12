@@ -62,7 +62,7 @@
         }
       }
     });
-    
+
     var feed = new google.feeds.Feed("http://northisup.com/feed/");
     feed.load(function(result) {
       if (!result.error) {
@@ -75,7 +75,7 @@
         }
       }
     });
-    
+
   }
   google.setOnLoadCallback(initialize);
 
@@ -87,7 +87,7 @@
     <div>
       <img class="logo" src="images/email.png">
     </div>
-    <div class="span-7 colborder"></div>
+    <!-- <div class="span-7 colborder"></div> -->
     <div id="support"> <!-- begin right -->
       <div id="styleswitcher">
         <p>&raquo; Text size:</p>
@@ -107,21 +107,20 @@
 
       <div class="span-7 colborder">
         <h6>Backend + Scale = ArchCamp</h6>
-        <p><img src="images/meetup.png" class="top pull-1 left" alt="test">
-          <a href="http://Meetup.com/ArchCamp">ArchCamp</a> is a meetup for engineers, by engineers. We talk about building high scale systems without having to listen to any sales pitches. Lightning talks + good discussion. <a href="http://Meetup.com/ArchCamp">Meetup.com/ArchCamp</a>
+        <p><img src="images/meetup.png" class="top pull-1 left" alt="test"> <a href="http://Meetup.com/ArchCamp">ArchCamp</a> is a meetup for engineers, by engineers. We talk about building high scale systems without having to listen to any sales pitches. Lightning talks + good discussion. <a href="http://Meetup.com/ArchCamp">Meetup.com/ArchCamp</a></p>
       </div>
 
       <!-- <div class="span-7 colborder">
-        <h6>NAND Calculator</h6>
-        <p><img src="images/nand.png" class="top pull-1 left" alt="test">My first iPhone app. Currently making its way through the submission process. More when its through!</p>
+      <h6>NAND Calculator</h6>
+      <p><img src="images/nand.png" class="top pull-1 left" alt="test">My first iPhone app. Currently making its way through the submission process. More when its through!</p>
       </div> -->
 
       <div class="span-8 colborder">
         <h6>Code</h6>
         <p><img src="images/github.png" class="top pull-1 left" alt="test"><a href="https://github.com/northisup">Social coding</a> is kinda awesome. Unfortunately a lot of my code isn't released yet, working on adding more in my little spare time :-)</p>
-        </div>
-        <!-- <h6>Politwit</h6>
-        <p><img src="images/pt.png" class="top pull-1 left" alt="test">Twitter application for generating politically significant hash tags. See the beta of politwit <a href="http://app.northisup.com/politwit/">here</a>. And please report bugs <a href="http://northisup.com/c/projects/politweet/issues/new">here</a></p>
+      </div>
+      <!-- <h6>Politwit</h6>
+      <p><img src="images/pt.png" class="top pull-1 left" alt="test">Twitter application for generating politically significant hash tags. See the beta of politwit <a href="http://app.northisup.com/politwit/">here</a>. And please report bugs <a href="http://northisup.com/c/projects/politweet/issues/new">here</a></p>
       </div> -->
 
       <div class="span-7 last">
@@ -401,35 +400,35 @@
       <div class="span-7 last">
         <div class="footprints">
           <h3>My Footprints</h3>
+
+          <h4>Twitter</h4>
+          <div class="tweet"></div>
+          <hr />
+
           <h4><a href="https://github.com/northisup">Git Hub</a></h4>
           <div id="github" class="feed"></div>
           <hr />
 
           <h4><a href="https://northisup.com">My Blog</a></h4>
           <div id="blog" class="feed"></div>
-          
           <hr />
-          <h4>Twitter</h4>
-          <div class="tweet"></div>
 
-          <hr />
         </div>
         <!-- 
         <div class="augmented">
-          <object width="270" height="202">
-            <param name="augment" value="resources/augment.swf">
-            <embed src="resources/augment.swf" width="270" height="202">
-            </embed>
-          </object>
-          <p class="quiet">
-            Have my business card? hold up the back of your card to your camera for my hello world surprise. Don't have my card? print out <a href="resources/augmented.pdf">this</a> image.
-          </p>
+        <object width="270" height="202">
+        <param name="augment" value="resources/augment.swf">
+        <embed src="resources/augment.swf" width="270" height="202">
+        </embed>
+        </object>
+        <p class="quiet">
+        Have my business card? hold up the back of your card to your camera for my hello world surprise. Don't have my card? print out <a href="resources/augmented.pdf">this</a> image.
+        </p>
         </div> -->
       </div>  <!-- /span -->
-      <hr>
+      <hr />
       <h2 class="alt">Pick and choose amongst these and many more features; guacamole is $1 extra.</h2>
-      <hr>
-
+      <hr />
     </div>  <!-- /support -->
   </div> <!-- /container -->
 </body>
