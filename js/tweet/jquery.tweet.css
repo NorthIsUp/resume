@@ -10,7 +10,7 @@
 	/*background-color: #8ADEE2;*/
 }
 
-#feed div {
+.feed div {
 	padding-left: .5em;
 	overflow: auto;
 	margin-top: .5em;
